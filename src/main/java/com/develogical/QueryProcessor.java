@@ -32,7 +32,7 @@ public class QueryProcessor {
         }
         if (query.toLowerCase().contains("power")) {
             String[] words = query.split(" ");
-            return String.valueOf(Integer.parseInt(words[words.length-7]) ^ Integer.parseInt(words[words.length-1]));
+            return String.valueOf(Integer.parseInt(words[words.length-6]) ^ Integer.parseInt(words[words.length-1]));
         }
         return "as;lfkjas;lk";
 
