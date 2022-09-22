@@ -18,6 +18,11 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("bond")) {
             return "Sean Connery";
         }
+
+        if (query.toLowerCase().contains("cube")) {
+            String[] words = query.split(" ");
+            return String.valueOf(words[words.length-1]);
+        }
         return "as;lfkjas;lk";
 
     }
