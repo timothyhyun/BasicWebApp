@@ -23,6 +23,10 @@ public class QueryProcessor {
             String[] words = query.split(" ");
             return String.valueOf(words[words.length-1]);
         }
+        if (query.toLowerCase().contains("prime")) {
+            String[] words = query.split(" ");
+            return String.valueOf(words[words.length-1]);
+        }
         return "as;lfkjas;lk";
 
     }
