@@ -27,6 +27,9 @@ public class QueryProcessor {
             String[] words = query.split(" ");
             return String.valueOf(words[words.length-1]);
         }
+        if (query.toLowerCase().contains("teresa")) {
+            return "2016";
+        }
         return "as;lfkjas;lk";
 
     }
